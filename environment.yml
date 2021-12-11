@@ -1,0 +1,6 @@
+name: advent_of_code_2021
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
