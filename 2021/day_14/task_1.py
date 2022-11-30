@@ -8,7 +8,9 @@ def read_input(path: str):
 
 if __name__ == "__main__":
     template, rules = read_input("day_14/input.txt")
-    rules = {rule.split(" -> ")[0]: rule.split(" -> ")[1] for rule in rules.splitlines()}
+    rules = {
+        rule.split(" -> ")[0]: rule.split(" -> ")[1] for rule in rules.splitlines()
+    }
 
     for _ in range(10):
         new_template = template[0]

@@ -85,4 +85,3 @@ if __name__ == "__main__":
         current_nbr = add_nbr
 
     print(magnitude(current_nbr))
-

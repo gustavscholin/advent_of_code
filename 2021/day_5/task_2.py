@@ -20,7 +20,14 @@ if __name__ == "__main__":
         elif coords[1] == coords[3]:
             points.extend([(i, coords[1]) for i in get_range(coords[0], coords[2])])
         else:
-            points.extend([(i, j) for i, j in zip(get_range(coords[0], coords[2]), get_range(coords[1], coords[3]))])
+            points.extend(
+                [
+                    (i, j)
+                    for i, j in zip(
+                        get_range(coords[0], coords[2]), get_range(coords[1], coords[3])
+                    )
+                ]
+            )
             pass
 
     c = Counter(points)

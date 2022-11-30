@@ -33,4 +33,3 @@ if __name__ == "__main__":
         total_flashes += np.sum(flashed)
 
     print(total_flashes)
-

@@ -1,17 +1,13 @@
 #!/bin/sh
 
-if [ $# -eq 0 ] 
-then
-    date=$( date +%-d )
-else
-    date=$1
-fi
+date=${1:-$( date +%-d )}
+year=${2:-$( date +%-Y )}
 
-day_folder="day_$date"
+day_folder="$year/day_$date"
 
 if [ ! -d "$day_folder" ]
 then
-    mkdir "$day_folder"
+    mkdir -p "$day_folder"
     echo "Directory for day $date created!"
 else
     echo "Directory for day $date already exists."
@@ -28,10 +24,10 @@ do
     fi
 done
 
-response=$(curl -s -S -f -o "$day_folder"/input.txt -H "cookie: session=${AOC_SESSION_COOKIE}" -w "%{http_code}\n" "https://adventofcode.com/2021/day/$date/input")
+response=$(curl -s -S -f -o "$day_folder"/input.txt -H "cookie: session=${AOC_SESSION_COOKIE}" -w "%{http_code}\n" "https://adventofcode.com/$year/day/$date/input")
 if [ ! "$response" -eq 200 ]
 then
-    if [ -e "$day_folder"/input.txt ] 
+    if [ -e "$day_folder"/input.txt ]
     then
         rm "$day_folder"/input.txt
     fi
