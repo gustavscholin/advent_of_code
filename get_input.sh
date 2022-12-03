@@ -15,9 +15,15 @@ fi
 
 for i in 1 2
 do
-    if [ ! -e "$day_folder"/task_$i.py ]
+    task_file="$day_folder"/task_$i.py
+    if [ ! -e "$task_file" ]
     then
-        touch "$day_folder"/task_$i.py
+        cat <<EOT >> "$task_file"
+from utils.read_input import read_input
+
+if __name__ == "__main__":
+    _ = read_input("$day_folder/input.txt")
+EOT
         echo "File task_$i.py created!"
     else
         echo "File task_$i.py already exists."
