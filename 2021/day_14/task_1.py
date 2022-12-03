@@ -7,7 +7,7 @@ def read_input(path: str):
 
 
 if __name__ == "__main__":
-    template, rules = read_input("day_14/input.txt")
+    template, rules = read_input("2021/day_14/input.txt")
     rules = {
         rule.split(" -> ")[0]: rule.split(" -> ")[1] for rule in rules.splitlines()
     }

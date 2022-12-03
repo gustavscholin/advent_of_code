@@ -82,7 +82,7 @@ def add_nbrs(nbr_1, nbr_2):
 
 
 if __name__ == "__main__":
-    snail_nbrs = read_input("day_18/input.txt")
+    snail_nbrs = read_input("2021/day_18/input.txt")
 
     nbr_combs = permutations(snail_nbrs, 2)
 

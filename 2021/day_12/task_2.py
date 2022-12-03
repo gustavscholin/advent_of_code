@@ -20,7 +20,7 @@ def find_paths(start, path):
 
 
 if __name__ == "__main__":
-    connections = read_input("day_12/input.txt")
+    connections = read_input("2021/day_12/input.txt")
     graph = defaultdict(list)
 
     for connection in connections:

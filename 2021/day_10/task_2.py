@@ -2,7 +2,7 @@ from collections import deque
 from utils.read_input import read_input
 
 if __name__ == "__main__":
-    lines = read_input("day_10/input.txt")
+    lines = read_input("2021/day_10/input.txt")
 
     signs = {
         "(": ")",

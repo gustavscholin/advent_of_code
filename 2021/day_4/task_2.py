@@ -7,7 +7,7 @@ def read_input(path: str):
 
 
 if __name__ == "__main__":
-    bingo_input = read_input("day_4/input.txt")
+    bingo_input = read_input("2021/day_4/input.txt")
     numbers = [int(i) for i in bingo_input[0].split(",")]
     boards = [[row.split() for row in board.split("\n")] for board in bingo_input[1:]]
     boards = np.array(boards).astype(int)

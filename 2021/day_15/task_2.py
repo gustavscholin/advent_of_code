@@ -33,7 +33,7 @@ def dijkstra(
 
 
 if __name__ == "__main__":
-    risk_map = np.array(read_input_as_matrix("day_15/input.txt", "int"))
+    risk_map = np.array(read_input_as_matrix("2021/day_15/input.txt", "int"))
 
     full_risk_map = np.vstack(
         [np.hstack([risk_map + i + j for j in range(5)]) for i in range(5)]

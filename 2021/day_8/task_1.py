@@ -3,7 +3,7 @@ import numpy as np
 from utils.read_input import read_input
 
 if __name__ == "__main__":
-    digit_list = read_input("day_8/input.txt")
+    digit_list = read_input("2021/day_8/input.txt")
     digit_list = np.array(
         [[len(i) for i in digits.split("|")[1].split()] for digits in digit_list]
     )

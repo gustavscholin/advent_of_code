@@ -66,7 +66,7 @@ def magnitude(nbr: str) -> str:
 
 
 if __name__ == "__main__":
-    snail_nbrs = read_input("day_18/input.txt")
+    snail_nbrs = read_input("2021/day_18/input.txt")
 
     current_nbr = snail_nbrs[0]
 

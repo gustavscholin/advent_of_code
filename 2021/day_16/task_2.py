@@ -75,7 +75,7 @@ def hexa_2_dec(hexa_str: str):
 
 
 if __name__ == "__main__":
-    with open("day_16/input.txt", "r") as f:
+    with open("2021/day_16/input.txt", "r") as f:
         hexa_str = f.read().strip()
 
     bin_str = hexa_2_dec(hexa_str)

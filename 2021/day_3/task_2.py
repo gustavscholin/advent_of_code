@@ -4,7 +4,7 @@ from copy import deepcopy
 from utils.read_input import read_input
 
 if __name__ == "__main__":
-    binaries = read_input("day_3/input.txt")
+    binaries = read_input("2021/day_3/input.txt")
 
     oxygen_binaries = deepcopy(binaries)
     for i in range(len(binaries[0])):

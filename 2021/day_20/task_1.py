@@ -26,7 +26,7 @@ def get_pot_pixels(image_dict):
 
 
 if __name__ == "__main__":
-    algo, image_dict = read_input("day_20/input.txt")
+    algo, image_dict = read_input("2021/day_20/input.txt")
     for turn in range(2):
         if algo[0] == "#" and algo[-1] == ".":
             if turn % 2 == 1:

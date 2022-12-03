@@ -11,7 +11,7 @@ def get_range(a, b):
 
 
 if __name__ == "__main__":
-    lines = read_input("day_5/input.txt")
+    lines = read_input("2021/day_5/input.txt")
     points = []
     for line in lines:
         coords = [int(i) for i in re.findall(r"\d+", line)]

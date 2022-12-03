@@ -33,7 +33,7 @@ def dijkstra(
 
 
 if __name__ == "__main__":
-    risk_map = read_input_as_matrix("day_15/input.txt", "int")
+    risk_map = read_input_as_matrix("2021/day_15/input.txt", "int")
     vertices = []
     edges = {}
     for i in range(len(risk_map)):

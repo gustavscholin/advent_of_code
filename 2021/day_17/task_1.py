@@ -7,6 +7,6 @@ def read_input(path: str):
 
 
 if __name__ == "__main__":
-    target = read_input("day_17/input.txt")
+    target = read_input("2021/day_17/input.txt")
 
     print(sum(range(abs(target[2]))))

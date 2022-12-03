@@ -7,7 +7,7 @@ def read_input(path: str):
 
 
 if __name__ == "__main__":
-    coords, folds = read_input("day_13/input.txt")
+    coords, folds = read_input("2021/day_13/input.txt")
     fold = folds.splitlines()[0].strip("fold along ").split("=")
     coords = [[int(i) for i in coord.split(",")] for coord in coords.splitlines()]
 

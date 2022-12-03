@@ -19,7 +19,7 @@ def get_adj(flashing):
 
 
 if __name__ == "__main__":
-    octopuses = np.array(read_input_as_matrix("day_11/input.txt", "int"))
+    octopuses = np.array(read_input_as_matrix("2021/day_11/input.txt", "int"))
 
     step = 0
     while True:

@@ -13,7 +13,7 @@ def get_basin(point):
 
 
 if __name__ == "__main__":
-    heightmap = read_input("day_9/input.txt")
+    heightmap = read_input("2021/day_9/input.txt")
     heightmap = [[int(i) for i in row] for row in heightmap]
 
     basins = []

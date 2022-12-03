@@ -3,7 +3,7 @@ import numpy as np
 from utils.read_input import read_input
 
 if __name__ == "__main__":
-    digit_list = read_input("day_8/input.txt")
+    digit_list = read_input("2021/day_8/input.txt")
     digit_list = [tuple(map(str.split, digits.split("|"))) for digits in digit_list]
 
     output_sum = 0

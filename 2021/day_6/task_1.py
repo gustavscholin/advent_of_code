@@ -2,7 +2,7 @@ import numpy as np
 from utils.read_input import read_input_single_line
 
 if __name__ == "__main__":
-    fishes = np.array(read_input_single_line("day_6/input.txt", "int"))
+    fishes = np.array(read_input_single_line("2021/day_6/input.txt", "int"))
     for _ in range(80):
         fishes -= 1
         due_fishes = np.where(fishes == -1)

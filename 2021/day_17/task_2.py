@@ -23,7 +23,7 @@ def traj_in_target(x_vel, y_vel):
 
 
 if __name__ == "__main__":
-    target = read_input("day_17/input.txt")
+    target = read_input("2021/day_17/input.txt")
     x_range = target[:2]
     y_range = target[2:]
 

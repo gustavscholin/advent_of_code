@@ -3,7 +3,7 @@ import numpy as np
 from utils.read_input import read_input
 
 if __name__ == "__main__":
-    binaries = read_input("day_3/input.txt")
+    binaries = read_input("2021/day_3/input.txt")
     binaries = [[int(bit) for bit in binary] for binary in binaries]
     binaries = np.array(binaries)
 

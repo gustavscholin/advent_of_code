@@ -2,7 +2,7 @@ from utils.read_input import read_input_single_line
 from copy import deepcopy
 
 if __name__ == "__main__":
-    fishes = read_input_single_line("day_6/input.txt", "int")
+    fishes = read_input_single_line("2021/day_6/input.txt", "int")
     fishes = {i: fishes.count(i) for i in range(9)}
     for _ in range(256):
         due_fishes = fishes[0]
