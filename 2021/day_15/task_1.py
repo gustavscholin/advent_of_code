@@ -1,35 +1,7 @@
-from typing import Dict, List, Tuple
 import numpy as np
-import heapq as hq
 
 from utils.read_input import read_input_as_matrix
-
-
-def dijkstra(
-    vertices: List[Tuple[int]],
-    edges: Dict[Tuple[int], Dict[Tuple[int], int]],
-    start: Tuple[int],
-    destination: Tuple[int],
-):
-    visited = {v: False for v in vertices}
-    distances = {v: float("inf") for v in vertices}
-    paths = {v: None for v in vertices}
-    queue = []
-    distances[start] = 0
-    hq.heappush(queue, (0, start))
-    while queue:
-        g, u = hq.heappop(queue)
-        visited[u] = True
-        if u == destination:
-            return distances[destination]
-        for v, w in edges[u].items():
-            if not visited[v]:
-                f = g + w
-                if f < distances[v]:
-                    distances[v] = f
-                    paths[v] = u
-                    hq.heappush(queue, (f, v))
-    return paths, distances
+from utils.graphs import shortest_path
 
 
 if __name__ == "__main__":
@@ -51,4 +23,4 @@ if __name__ == "__main__":
 
     start = (0, 0)
     destination = (len(risk_map) - 1, len(risk_map) - 1)
-    print(dijkstra(vertices, edges, start, destination))
+    print(shortest_path(vertices, edges, start, destination))
