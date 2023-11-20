@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Function to print usage/help message
 usage()
 {
     echo
@@ -13,6 +14,7 @@ usage()
     echo
 }
 
+# Parse options
 while getopts "h" option; do
    case $option in
       h) usage; exit;;
@@ -20,23 +22,19 @@ while getopts "h" option; do
    esac
 done
 
+# Get and validate day
 day=${1:-$( date +%-d )}
-# Check if day is an integer
-if [[ $day =~ ^[0-9]+$ ]]; then
-  # day is an integer, check if it's within the desired range
-  if [ "$day" -lt 1 ] || [ "$day" -gt 25 ]; then
-    echo "Error: $day is not in the valid range of 1 to 25."
+if ! [[ $day =~ ^[0-9]+$ ]] || [ "$day" -lt 1 ] || [ "$day" -gt 25 ]; then
+    echo "Error: The day input ($day) is not a valid day (1-25)."
     exit 1
-  fi
-else
-  echo "$day is not an integer."
 fi
 
+# Get and validate year
 year=${2:-$( date +%-Y )}
-# Check if year is an integer
-if ! [[ $year =~ ^[0-9]+$ ]]; then
-  echo "Error: $year is not an integer."
-  exit 1
+current_year=$(date +%-Y)
+if ! [[ $year =~ ^[0-9]+$ ]] || [ "$year" -lt 2015 ] || [ "$year" -gt "$current_year" ]; then
+    echo "Error: The year input ($year) is not a valid year (2015-current year)."
+    exit 1
 fi
 
 day_folder="$year/day_$day"
