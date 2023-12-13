@@ -1,5 +1,6 @@
 import re
 from collections import defaultdict
+
 from utils.read_input import read_input
 
 if __name__ == "__main__":

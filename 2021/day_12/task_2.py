@@ -1,5 +1,6 @@
-from copy import deepcopy
 from collections import defaultdict
+from copy import deepcopy
+
 from utils.read_input import read_input
 
 

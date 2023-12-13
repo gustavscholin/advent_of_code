@@ -1,4 +1,5 @@
 from itertools import permutations
+
 from ortools.sat.python import cp_model
 
 

@@ -1,4 +1,5 @@
 import numpy as np
+
 from utils.read_input import read_input_single_line
 
 if __name__ == "__main__":

@@ -1,8 +1,9 @@
 import heapq as hq
+
 import numpy as np
 
-from utils.read_input import read_input_as_matrix
 from utils.graphs import shortest_path
+from utils.read_input import read_input_as_matrix
 
 
 def get_height(i, j):

@@ -1,6 +1,7 @@
 import re
-from utils.read_input import read_input
 from collections import Counter
+
+from utils.read_input import read_input
 
 
 def get_range(a, b):

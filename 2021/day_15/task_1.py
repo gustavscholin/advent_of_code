@@ -1,8 +1,7 @@
 import numpy as np
 
-from utils.read_input import read_input_as_matrix
 from utils.graphs import shortest_path
-
+from utils.read_input import read_input_as_matrix
 
 if __name__ == "__main__":
     risk_map = read_input_as_matrix("2021/day_15/input.txt", "int")

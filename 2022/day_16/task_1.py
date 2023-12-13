@@ -1,10 +1,10 @@
 import re
-
 from collections import defaultdict
-from itertools import combinations
 from copy import deepcopy
-from utils.read_input import read_input
+from itertools import combinations
+
 from utils.graphs import shortest_path
+from utils.read_input import read_input
 
 
 def search(curr_vertex: str, opened: list, min_left, curr_flow, sum_flow):

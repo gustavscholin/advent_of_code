@@ -1,4 +1,5 @@
-from math import sqrt, ceil, floor
+from math import ceil, floor, sqrt
+
 from utils.read_input import read_input
 
 if __name__ == "__main__":

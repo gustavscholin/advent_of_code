@@ -1,6 +1,8 @@
 import re
-from utils.read_input import read_input
+
 from ortools.constraint_solver import pywrapcp
+
+from utils.read_input import read_input
 
 if __name__ == "__main__":
     lines = read_input("2022/day_15/input.txt")

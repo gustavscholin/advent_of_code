@@ -1,6 +1,7 @@
 import re
-import numpy as np
 from copy import deepcopy
+
+import numpy as np
 
 
 def read_input(path):

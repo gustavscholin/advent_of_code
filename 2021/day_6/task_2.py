@@ -1,5 +1,6 @@
-from utils.read_input import read_input_single_line
 from copy import deepcopy
+
+from utils.read_input import read_input_single_line
 
 if __name__ == "__main__":
     fishes = read_input_single_line("2021/day_6/input.txt", "int")

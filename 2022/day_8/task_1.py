@@ -1,4 +1,5 @@
 import numpy as np
+
 from utils.read_input import read_input_as_matrix
 
 if __name__ == "__main__":

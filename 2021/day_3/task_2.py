@@ -1,6 +1,7 @@
+from copy import deepcopy
+
 import numpy as np
 
-from copy import deepcopy
 from utils.read_input import read_input
 
 if __name__ == "__main__":

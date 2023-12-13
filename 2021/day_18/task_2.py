@@ -1,9 +1,9 @@
 import json
-import re
 import math
+import re
+from itertools import permutations
 
 from utils.read_input import read_input
-from itertools import permutations
 
 
 def explode(nbr: str) -> str:
