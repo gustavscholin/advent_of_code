@@ -22,6 +22,9 @@ while getopts "h" option; do
    esac
 done
 
+# shellcheck source=/dev/null
+source .env
+
 # Get and validate day
 day=${1:-$( date +%-d )}
 if ! [[ $day =~ ^[0-9]+$ ]] || [ "$day" -lt 1 ] || [ "$day" -gt 25 ]; then
