@@ -4,7 +4,7 @@ import numpy as np
 
 
 def check_integer(num):
-    return abs(a - round(a)) < 0.0001
+    return abs(num - round(num)) < 0.0001
 
 
 if __name__ == "__main__":
